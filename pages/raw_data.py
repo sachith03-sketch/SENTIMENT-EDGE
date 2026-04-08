@@ -194,7 +194,7 @@ def generate_articles_data(date_range, figure_filter, sentiment_range):
     start_date, end_date = date_range
     days = (end_date - start_date).days + 1
 
-    dates = pd.date_range(start=start_date, end=end_date, freq='H')
+    dates = pd.date_range(start=start_date, end=end_date, freq='h')
     n_articles = min(len(dates), 200)  # Limit for demo
 
     data = pd.DataFrame({

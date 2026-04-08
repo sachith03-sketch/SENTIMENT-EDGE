@@ -38,7 +38,7 @@ def render(ctx):
     st.markdown("### 🔄 Recent Activity")
 
     activity_data = pd.DataFrame({
-        'Time': pd.date_range(start=datetime.now() - timedelta(hours=24), periods=10, freq='2H'),
+        'Time': pd.date_range(start=datetime.now() - timedelta(hours=24), periods=10, freq='2h'),
         'Action': ['Analysis completed', 'New correlation found', 'Data updated', 'Report generated',
                   'API call made', 'Model trained', 'Alert triggered', 'Data synced', 'Backup created', 'Cache cleared'],
         'Status': ['✅ Success', '✅ Success', '✅ Success', '✅ Success', '✅ Success',
